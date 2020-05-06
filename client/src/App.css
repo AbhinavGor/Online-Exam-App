@@ -301,7 +301,7 @@ button {
 
 /* Navbar */
 .navbar {
-  color: var(--dark-color) !important;
+  color: var(--primary-color) !important;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -10,28 +10,10 @@ const Landing = ({ isAuthenticated }) => {
 
   return (
     <section className='landing'>
-      {/* <div className='dark-overlay'>
-        <div className='landing-inner'>
-          <h1 className='x-large'>Developer Connector</h1>
-          <p className='lead'>
-            Create a developer profile/portfolio, share posts and get help from
-            other developers
-          </p>
-          <div className='buttons'>
-            <Link to='/register' className='btn btn-primary'>
-              Sign Up
-            </Link>
-            <Link to='/login' className='btn btn-light'>
-              Login
-            </Link>
-          </div>
-        </div>
-      </div> */}
-      {/* <div className='transparent'></div> */}
       <div className='landing-main'>
-        <h1 class='logo'>Franqly&reg;</h1>
+        <h1 class='logo'>IEEE SSIT - VIT</h1>
         <div className='lead'>
-          Send messages anonymously to your friends.
+          Online quiz.
         </div>
 
         <div className='buttons'>
