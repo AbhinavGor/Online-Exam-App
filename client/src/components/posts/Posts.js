@@ -49,7 +49,7 @@ const Posts = ({ getPosts, post: { posts } }) => {
           name='text'
           cols='30'
           rows='5'
-          placeholder='Create a post'
+          placeholder='Answer'
           value={ans1}
           onChange={e => setText(e.target.value)}
           required
@@ -72,7 +72,7 @@ const Posts = ({ getPosts, post: { posts } }) => {
           name='text'
           cols='30'
           rows='5'
-          placeholder='Create a post'
+          placeholder='Answer'
           value={ans2}
           onChange={e => setText2(e.target.value)}
           required
@@ -95,7 +95,7 @@ const Posts = ({ getPosts, post: { posts } }) => {
           name='text'
           cols='30'
           rows='5'
-          placeholder='Create a post'
+          placeholder='Answer'
           value={ans3}
           onChange={e => setText3(e.target.value)}
           required
@@ -118,7 +118,7 @@ const Posts = ({ getPosts, post: { posts } }) => {
           name='text'
           cols='30'
           rows='5'
-          placeholder='Create a post'
+          placeholder='Answer'
           value={ans4}
           onChange={e => setText4(e.target.value)}
           required
