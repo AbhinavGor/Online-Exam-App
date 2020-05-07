@@ -1,7 +1,7 @@
 {
-  "name": "filesorter2.0",
+  "name": "OnlineExamApp",
   "version": "1.0.0",
-  "description": "File sorter for downloads folder",
+  "description": "A simple online exam app in MERN stack",
   "main": "index.js",
   "scripts": {
     "start": "node server",
