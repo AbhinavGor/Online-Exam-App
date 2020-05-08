@@ -29,10 +29,24 @@ router.post(
     try {
       const user = await User.findById(req.user.id).select('-password');
 
-      if(!user.hasposted){
+      if(true){
         user.hasposted = true;
         const newPost = new Post({
         text: req.body.text,
+        text2: req.body.text2,
+        text3: req.body.text3,
+        text4: req.body.text4,
+        text5: req.body.text5,
+        text6: req.body.text6,
+        text7: req.body.text7,
+        text8: req.body.text8,
+        text9: req.body.text9,
+        text10: req.body.text10,
+        text11: req.body.text11,
+        text12: req.body.text12,
+        text13: req.body.text13,
+        text14: req.body.text14,
+        text15: req.body.text15,
         name: user.name,
         avatar: user.avatar,
         user: req.user.id

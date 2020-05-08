@@ -8,7 +8,48 @@ const PostSchema = new Schema({
     },
     text: {
         type: String,
-        required: true,
+    },
+    text2: {
+        type: String,
+    },
+    text4: {
+        type: String,
+    },
+    text4: {
+        type: String,
+    },
+    text5: {
+        type: String,
+    },
+    text6: {
+        type: String,
+    },
+    text7: {
+        type: String,
+    },
+    text8: {
+        type: String,
+    },
+    text9: {
+        type: String,
+    },
+    text10: {
+        type: String,
+    },
+    text11: {
+        type: String,
+    },
+    text12: {
+        type: String,
+    },
+    text13: {
+        type: String,
+    },
+    text14: {
+        type: String,
+    },
+    text15: {
+        type: String,
     },
     name:{
         type:String,
