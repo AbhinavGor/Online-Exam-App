@@ -20,12 +20,8 @@ const PostForm = ({ addPost }) => {
   const [text14, setText14] = useState('');
   const [text15, setText15] = useState('');
 
-  let s1 = 0;
-    let s2 = 0;
-    let s3  = 0;
-    let s4 = 0;
   
-  let score = s1 + s2 + s3 + s4;
+  var score = 0;
 
   function checkall(q1,q2,q3,q4){
     const a1 = '3';
@@ -35,7 +31,7 @@ const PostForm = ({ addPost }) => {
     if (q1 === a1){
       document.getElementById(a1).innerHTML = 'Correct';
       // document.getElementById('posts').style.visibility = "none";
-      const s1 = 1;
+      score += 1;
     }
     else{
       document.getElementById(a1).innerHTML = 'Wrong';
@@ -43,21 +39,21 @@ const PostForm = ({ addPost }) => {
     if (q2 === a2){
       document.getElementById(a2).innerHTML = 'Correct';
       // document.getElementById('posts').style.visibility = "none";
-      const s2=1;
+      score += 1;
     }else{
       document.getElementById(a2).innerHTML = 'Wrong';
     }
     if (q3 === a3){
       document.getElementById(a3).innerHTML = 'Correct';
       // document.getElementById('posts').style.visibility = "none";
-      const s3=1;
+      score += 1;
     }else{
       document.getElementById(a3).innerHTML = 'Wrong';
     }
     if (q4 === a4){
       document.getElementById(a4).innerHTML = 'Correct';
       // document.getElementById('posts').style.visibility = "none";
-      s4 = 1;
+      score += 1;
     }else{
       document.getElementById(a4).innerHTML = 'Wrong';
     }

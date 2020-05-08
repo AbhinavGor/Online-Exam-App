@@ -10,11 +10,6 @@ const Posts = ({ getPosts, post: { posts } }) => {
   useEffect(() => {
     getPosts();
   }, [getPosts]);
-
-  const [ans1, setText] = useState('');
-  const [ans2, setText2] = useState('');
-  const [ans3, setText3] = useState('');
-  const [ans4, setText4] = useState('');
   // var score = 0;
 
   // function check(answer, key){
