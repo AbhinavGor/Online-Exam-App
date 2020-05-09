@@ -5,13 +5,14 @@ import PostItem from './PostItem';
 import PostForm from './PostForm';
 import { getPosts } from '../../actions/post';
 
-const Posts = ({ getPosts, post: { posts } }) => {
+const Posts = ({ getPosts, post: { posts }, auth }) => {
   useEffect(() => {
     getPosts();
   }, [getPosts]);
   return (
     <Fragment>
-      <PostForm />
+      {!auth.user.hasposted && (<PostForm />)}
+      {auth.user.hasposted && (<h1>You have already attempted the quiz.</h1>)}
       <div className="posts" id='posts'>
         {posts.map((post) => (
           <PostItem key={post._id} post={post} />
@@ -27,7 +28,8 @@ Posts.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  post: state.post
+  post: state.post,
+  auth: state.auth
 });
 
 export default connect(mapStateToProps, { getPosts })(Posts);

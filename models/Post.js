@@ -51,6 +51,9 @@ const PostSchema = new Schema({
     text15: {
         type: String,
     },
+    score: {
+        type: Number,
+    },
     name:{
         type:String,
     },
