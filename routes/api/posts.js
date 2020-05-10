@@ -47,6 +47,7 @@ router.post(
         text13: req.body.text13,
         text14: req.body.text14,
         text15: req.body.text15,
+        score: req.body.score,
         name: user.name,
         avatar: user.avatar,
         user: req.user.id

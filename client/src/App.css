@@ -165,6 +165,10 @@ img {
   color: #fff;
 }
 
+.auth{
+  margin-left: 10%;
+}
+
 .btn-light,
 .bg-light,
 .badge-light,
@@ -236,6 +240,9 @@ img {
 }
 
 /* Forms */
+.form{
+  margin-left: 10%;
+}
 .form .form-group {
   margin: 1.2rem 0;
 }
@@ -256,12 +263,30 @@ img {
   width: 100%;
   padding: 0.4rem;
   font-size: 1.2rem;
-  border: 1px solid #ccc;
+}
+
+input[type='email'],
+input[type='password'],
+input{
+  border: none;
+  border-bottom: 2px solid var(--primary-color) !important;
+  width: 80%;
+}
+
+.form input[type='email']:focus,
+.form input[type='password']:focus,
+.form input[type='text']:focus{
+  outline: none;
 }
 
 .form input[type='submit'],
 button {
   font: inherit;
+  width: 40% !important;
+}
+
+.submit{
+  text-align: center;
 }
 
 .form .social-input {
@@ -271,22 +296,6 @@ button {
 .form .social-input i {
   padding: 0.5rem;
   width: 4rem;
-}
-
-.form .social-input i.fa-twitter {
-  color: #38a1f3;
-}
-.form .social-input i.fa-facebook {
-  color: #3b5998;
-}
-.form .social-input i.fa-instagram {
-  color: #3f729b;
-}
-.form .social-input i.fa-youtube {
-  color: #c4302b;
-}
-.form .social-input i.fa-linkedin {
-  color: #0077b5;
 }
 
 .table th,
@@ -309,6 +318,8 @@ button {
   position: fixed;
   z-index: 1;
   width: 100%;
+  background-color: white;
+  border-bottom: 2px solid var(--dark-color);
   top: 0;
 }
 
@@ -603,8 +614,12 @@ body{
   display: block;
   color: #8BA5A5;
   font-size: 2em;
-  text-align: center;
+  
   padding: 0 100px 80px 100px;
+}
+
+.leadp{
+  text-align: center;
 }
 
 .form-container{

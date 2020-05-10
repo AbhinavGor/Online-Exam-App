@@ -12,7 +12,7 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='landing-main'>
         <h1 class='logo'>IEEE SSIT - VIT</h1>
-        <div className='lead'>
+        <div className='lead leadp'>
           Online quiz.
         </div>
 

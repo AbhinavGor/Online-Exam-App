@@ -66,10 +66,10 @@ const PostForm = ({ addPost }) => {
     <Fragment>
     <div className='post-form'>
       <form
-        className='form my-1'
+        className='form my-1 form-group'
         onSubmit={e => {
           e.preventDefault();
-          addPost({ text, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11, text12, text13, text14, text15 });
+          addPost({ text, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11, text12, text13, text14, text15, score});
           setText('');
           checkall(text, text2, text3, text4);
         }}
@@ -79,6 +79,7 @@ const PostForm = ({ addPost }) => {
         </div><br />
           <h4>1 + 3 = ??</h4>
         <div id='3'><input
+          type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -92,6 +93,7 @@ const PostForm = ({ addPost }) => {
         </div><br />
         <h4>Delhi is the capital city of _________.</h4>
         <div id='india'><input
+          type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -103,6 +105,7 @@ const PostForm = ({ addPost }) => {
         </div><br />
         <h4>Waht is the speeling of speling?</h4>
         <div id='spelling'><input
+          type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -114,6 +117,7 @@ const PostForm = ({ addPost }) => {
         </div><br />
         <h4>Is StarTrek better than StarWars?</h4>
         <div id='No'><input
+          type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -135,6 +139,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 6</h3>
         </div><br />
         <input
+          type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -145,6 +150,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 7</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -155,6 +161,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 8</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -165,6 +172,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 9</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -175,6 +183,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 10</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -185,6 +194,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 11</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -195,6 +205,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 12</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -205,6 +216,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 13</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -215,6 +227,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 14</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -225,6 +238,7 @@ const PostForm = ({ addPost }) => {
           <h3>Question 15</h3>
         </div><br />
         <input
+        type='text'
           name='text2'
           cols='30'
           rows='2'
@@ -233,7 +247,7 @@ const PostForm = ({ addPost }) => {
           onChange={e => setText15(e.target.value)} /><br /><br />
              
         
-        <input type='submit' className='btn btn-dark my-1' value='Submit' />
+        <div className='submit'><input type='submit' className='btn btn-dark my-1' value='Submit' /></div>
       </form>
     </div>
     <div><strong>Score is : </strong>{ score }</div>
