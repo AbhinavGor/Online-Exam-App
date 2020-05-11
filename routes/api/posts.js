@@ -11,15 +11,7 @@ const User = require('../../models/User');
 // @desc     Create a post
 // @access   Private
 router.post(
-  '/',
-  [
-    auth,
-    [
-      check('text', 'Text is required')
-        .not()
-        .isEmpty()
-    ]
-  ],
+  '/', auth,
   async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {

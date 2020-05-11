@@ -11,12 +11,14 @@ const Posts = ({ getPosts, post: { posts }, auth }) => {
   }, [getPosts]);
   return (
     <Fragment>
+      <div className='tribal'>
       {!auth.user.hasposted && (<PostForm />)}
-      {auth.user.hasposted && (<h1>You have already attempted the quiz.</h1>)}
-      <div className="posts" id='posts'>
+      {auth.user.hasposted && (<h1 className='comp'>You have already attempted the quiz.</h1>)}
+      {/* <div className="posts" id='posts'>
         {posts.map((post) => (
           <PostItem key={post._id} post={post} />
         ))}
+      </div> */}
       </div>
     </Fragment>
   );

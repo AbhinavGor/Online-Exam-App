@@ -60,14 +60,17 @@ const PostForm = ({ addPost }) => {
 
     return score;
   }
-
+  function removeForm(){
+    document.getElementById('form').innerHTML = '<h1 className="comp">You have already attempted the quiz.</h1>'
+  }
 
   return (
     <Fragment>
-    <div className='post-form'>
+    <div className='post-form post' id='form'>
       <form
         className='form my-1 form-group'
         onSubmit={e => {
+          removeForm();
           e.preventDefault();
           addPost({ text, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11, text12, text13, text14, text15, score});
           setText('');
@@ -250,7 +253,7 @@ const PostForm = ({ addPost }) => {
         <div className='submit'><input type='submit' className='btn btn-dark my-1' value='Submit' /></div>
       </form>
     </div>
-    <div><strong>Score is : </strong>{ score }</div>
+    {/* <div><strong>Score is : </strong>{ score }</div> */}
     </Fragment>
   );
 };
