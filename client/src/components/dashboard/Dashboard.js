@@ -16,7 +16,7 @@ const Dashboard = ({
         <i className="fas fa-user" /> Welcome {user && user.name}
       </p>
       <p className='dash-text'>
-      <div className='img-align'><img className  = 'img-logo' src={require('./TH.JPG')} /></div>
+      <div className='img-align'><img className  = 'img-logo' src={require('./th.jpg')} /></div>
           Online Treasure quest<br /> 
           This is lockdown 3.0.<br />
           You're sick of Netflix and chilling.<br />
