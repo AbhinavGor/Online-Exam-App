@@ -48,7 +48,7 @@ const Dashboard = ({
         </button>
 
         <div className="dash-text-div">
-          <p className="dash-text">
+          <p className="dash-text-1">
             The second stage tests your coding skills.<br />
           It is hackerank competition. Solve all the questions as soon as you can. 
           The participant with the highest score wins.<br />
