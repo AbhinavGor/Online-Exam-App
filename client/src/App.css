@@ -793,3 +793,11 @@ button{
 .comp{
   margin-top: 4em;
 }
+
+.img-align{
+  text-align: center;
+}
+.img-logo{
+  width: 16em;
+  height: auto;
+}
