@@ -20,47 +20,7 @@ const PostForm = ({ addPost }) => {
   const [text14, setText14] = useState('');
   const [text15, setText15] = useState('');
 
-  
-  var score = 0;
-
-  function checkall(q1,q2,q3,q4){
-    const a1 = '3';
-    const a2 = 'india';
-    const a3='spelling';
-    const a4 = 'No';
-    if (q1 === a1){
-      document.getElementById(a1).innerHTML = 'Correct';
-      // document.getElementById('posts').style.visibility = "none";
-      score += 1;
-    }
-    else{
-      document.getElementById(a1).innerHTML = 'Wrong';
-    }
-    if (q2 === a2){
-      document.getElementById(a2).innerHTML = 'Correct';
-      // document.getElementById('posts').style.visibility = "none";
-      score += 1;
-    }else{
-      document.getElementById(a2).innerHTML = 'Wrong';
-    }
-    if (q3 === a3){
-      document.getElementById(a3).innerHTML = 'Correct';
-      // document.getElementById('posts').style.visibility = "none";
-      score += 1;
-    }else{
-      document.getElementById(a3).innerHTML = 'Wrong';
-    }
-    if (q4 === a4){
-      document.getElementById(a4).innerHTML = 'Correct';
-      // document.getElementById('posts').style.visibility = "none";
-      score += 1;
-    }else{
-      document.getElementById(a4).innerHTML = 'Wrong';
-    }
-
-    return score;
-  }
-  function removeForm(){
+    function removeForm(){
     document.getElementById('form').innerHTML = '<h1 className="comp">You have already attempted the quiz.</h1>'
   }
 
@@ -72,9 +32,8 @@ const PostForm = ({ addPost }) => {
         onSubmit={e => {
           removeForm();
           e.preventDefault();
-          addPost({ text, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11, text12, text13, text14, text15, score});
+          addPost({ text, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11, text12, text13, text14, text15});
           setText('');
-          checkall(text, text2, text3, text4);
         }}
       >
         <div className='bg-primary p'>
@@ -253,13 +212,12 @@ const PostForm = ({ addPost }) => {
         <div className='submit'><input type='submit' className='btn btn-dark my-1' value='Submit' /></div>
       </form>
     </div>
-    {/* <div><strong>Score is : </strong>{ score }</div> */}
     </Fragment>
   );
 };
 
 PostForm.propTypes = {
-  addPost: PropTypes.func.isRequired
+  addPost: PropTypes.func.isRequired,
 };
 
 export default connect(

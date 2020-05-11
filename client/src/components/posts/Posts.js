@@ -19,6 +19,7 @@ const Posts = ({ getPosts, post: { posts }, auth }) => {
           <PostItem key={post._id} post={post} />
         ))}
       </div> */}
+      {auth.user.hasposted && (<div id='score'><strong>Score is : </strong>{ auth.user.score }</div>)}
       </div>
     </Fragment>
   );

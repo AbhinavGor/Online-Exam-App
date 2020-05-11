@@ -18,11 +18,60 @@ router.post(
       return res.status(400).json({ errors: errors.array() });
     }
 
+    var fscore = 0;
+    
     try {
       const user = await User.findById(req.user.id).select('-password');
 
-      if(true){
+      if(req.body.text == '3'){
+        fscore += 1;
+      }
+      if(req.body.text2 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text3 == 'spelling'){
+        fscore += 1;
+      }
+      if(req.body.text4 == 'No'){
+        fscore += 1;
+      }
+      if(req.body.text5 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text6 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text7 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text8 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text9 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text10 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text11 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text12 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text13 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text14 == 'india'){
+        fscore += 1;
+      }
+      if(req.body.text15 == 'india'){
+        fscore += 1;
+      }
+
+      if(user){
         user.hasposted = true;
+        user.score = fscore;
         const newPost = new Post({
         text: req.body.text,
         text2: req.body.text2,
@@ -39,7 +88,6 @@ router.post(
         text13: req.body.text13,
         text14: req.body.text14,
         text15: req.body.text15,
-        score: req.body.score,
         name: user.name,
         avatar: user.avatar,
         user: req.user.id
