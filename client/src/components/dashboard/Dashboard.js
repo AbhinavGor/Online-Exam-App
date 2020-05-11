@@ -18,7 +18,11 @@ const Dashboard = ({
         </h1>
         {/* <div className='img-align'><img className  = 'img-logo' src={require('../dashboard/TH.jpg')} alt="logo" /></div>
       <p className='dash-text'>
+<<<<<<< HEAD
       <div className='img-align'><img className  = 'img-logo' src={require('./TH.JPG')} /></div>
+=======
+      
+>>>>>>> 480113312f8dba1802b00b0b907cbe0eabc168af
           Online Treasure quest<br /> 
           This is lockdown 3.0.<br />
           You're sick of Netflix and chilling.<br />
