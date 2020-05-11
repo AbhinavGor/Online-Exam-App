@@ -21,7 +21,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <Fragment>
           {/* <Navbar /> */}
           <Switch>
