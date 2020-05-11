@@ -12,13 +12,13 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='transparent'>
         <h1 className='logo'>Bored again with lockdown 3.0?</h1>
-        <h1 className='logo'>IEEE - SSIT brings you -</h1>
+        <h1 className='logo'>IEEE SSIT - VIT brings you -</h1>
         <div className='img-align'><img className  = 'img-logo' src={require('../dashboard/TH.jpg')} /></div>
       </div>
       <div className='landing-main'>
         <h4 class='logo'>IEEE SSIT - VIT</h4>
         <div className='lead leadp'>
-          Online quiz.
+          Online quiz
         </div>
 
         <div className='buttons'>
