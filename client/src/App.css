@@ -20,7 +20,7 @@ body {
   /* line-height: 1.6; */
   background-color: #fff;
   color: #333;
-  background-color: black;
+  /* background-color: black; */
   overflow-x: hidden;
 }
 
@@ -264,11 +264,7 @@ h3{
   outline: none;
 }
 
-.form input[type='submit'],
-button {
-  font: inherit;
-  width: 40% !important;
-}
+
 
 .submit{
   text-align: center;
@@ -666,7 +662,7 @@ background-size: cover;
 .tribal{
   /* background: url('./dash.jpg') !important; */
   background: #58b4ae;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   margin: auto;
   padding: 0 !important;
@@ -689,6 +685,21 @@ background-size: cover;
 }
 .dash-text-div{
   width: 50%;
+}
+
+.dash-quiz{
+  width: 15%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.3);
+  transition: 0.4s;
+  /* margin: 0 10px 0 10px; */
+  margin: 10px 0 10px 0;
+}
+.dash-quiz:hover{
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
 }
 .signup{
   font-family: 'Josefin Sans', sans-serif !important;

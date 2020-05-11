@@ -23,7 +23,7 @@ const App = () => {
       <Router>
         {/* <Navbar /> */}
         <Fragment>
-          {/* <Navbar /> */}
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route component={Routes} />

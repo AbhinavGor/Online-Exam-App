@@ -2,7 +2,6 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
 const Dashboard = ({
   auth: { user },
 }) => {
@@ -18,11 +17,7 @@ const Dashboard = ({
         </h1>
         {/* <div className='img-align'><img className  = 'img-logo' src={require('../dashboard/TH.jpg')} alt="logo" /></div>
       <p className='dash-text'>
-<<<<<<< HEAD
-      <div className='img-align'><img className  = 'img-logo' src={require('./TH.JPG')} /></div>
-=======
       
->>>>>>> 480113312f8dba1802b00b0b907cbe0eabc168af
           Online Treasure quest<br /> 
           This is lockdown 3.0.<br />
           You're sick of Netflix and chilling.<br />
@@ -43,9 +38,8 @@ const Dashboard = ({
         <div className="dash-text-div">
           <p className="dash-text">
             The games consists of two stages. <br />
-            The first stage tests your IQ.<br />
-            Solve 10 clues and puzzles that come your way, answer
-            of each clue leads you to the next. Participants above a certain score will be allowed into the next stage.<br /><br />
+            The first stage tests your aptitude.<br />
+            Solve 15  puzzles that come your way. Participants above a certain score will be allowed into the next stage.<br /><br />
           </p>
         </div>
 
@@ -53,27 +47,29 @@ const Dashboard = ({
           Round 1
         </button>
 
-        <div className="dash-text">
+        <div className="dash-text-div">
           <p className="dash-text">
-            
+            The second stage tests your coding skills.<br />
+          It is hackerank competition. Solve all the questions as soon as you can. 
+          The participant with the highest score wins.<br />
           </p>
         </div>
-          <button className="dash-logout">
-            Logout
+        <button className="dash-quiz">
+          Logout
           </button>
 
 
-        </div>
+      </div>
     </section>
   );
 };
 
 Dashboard.propTypes = {
-        auth: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired
 };
 
 const mapStateToProps = (state) => ({
-        auth: state.auth,
+  auth: state.auth,
   profile: state.profile
 });
 
