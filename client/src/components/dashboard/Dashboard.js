@@ -2,7 +2,6 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
 const Dashboard = ({
   auth: { user },
 }) => {
@@ -10,13 +9,15 @@ const Dashboard = ({
   }, []);
 
   return (
-    
-      <section className='tribal'>
-      <p className="lead">
-        <i className="fas fa-user" /> Welcome {user && user.name}
-      </p>
+
+    <section className='tribal'>
+      <div className="dashboard">
+        <h1 className="lead">
+          <i className="fas fa-user" /> Welcome {user && user.name}
+        </h1>
+        {/* <div className='img-align'><img className  = 'img-logo' src={require('../dashboard/TH.jpg')} alt="logo" /></div>
       <p className='dash-text'>
-      <div className='img-align'><img className  = 'img-logo' src={require('./TH.JPG')} /></div>
+      
           Online Treasure quest<br /> 
           This is lockdown 3.0.<br />
           You're sick of Netflix and chilling.<br />
@@ -33,8 +34,33 @@ const Dashboard = ({
           The second stage tests your coding skills.<br />
           It is hackerank competition. Solve all the questions as soon as you can. The one who completes the game first becomes the winner.<br />
           WELCOME!<br /><br />
-      </p>
-      </section>
+      </p> */}
+        <div className="dash-text-div">
+          <p className="dash-text">
+            The games consists of two stages. <br />
+            The first stage tests your aptitude.<br />
+            Solve 15  puzzles that come your way. Participants above a certain score will be allowed into the next stage.<br /><br />
+          </p>
+        </div>
+
+        <button className="dash-quiz">
+          Round 1
+        </button>
+
+        <div className="dash-text-div">
+          <p className="dash-text">
+            The second stage tests your coding skills.<br />
+          It is hackerank competition. Solve all the questions as soon as you can. 
+          The participant with the highest score wins.<br />
+          </p>
+        </div>
+        <button className="dash-quiz">
+          Logout
+          </button>
+
+
+      </div>
+    </section>
   );
 };
 
@@ -47,6 +73,6 @@ const mapStateToProps = (state) => ({
   profile: state.profile
 });
 
-export default connect(mapStateToProps, {  })(
+export default connect(mapStateToProps, {})(
   Dashboard
 );
