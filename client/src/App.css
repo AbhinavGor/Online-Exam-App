@@ -6,6 +6,7 @@
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -14,18 +15,16 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 1rem; */
+  /* line-height: 1.6; */
   background-color: #fff;
   color: #333;
-  color: aliceblue !important;
   background-color: black;
   overflow-x: hidden;
 }
 
 a {
-  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -58,12 +57,10 @@ img {
 }
 
 .lead {
-  font-size: 1.2rem;
-  margin-top: 5%;
-  color: aliceblue !important;
+  color: #ffe2bc !important;
   font-weight: bolder;
-  height: fit-content;
-  padding: 80px;
+  margin-top: 3rem;
+  font-size: 52px !important;
 }
 
 .text-center {
@@ -168,9 +165,7 @@ img {
   color: #fff;
 }
 
-.auth{
-  margin-left: 10%;
-}
+
 
 .btn-light,
 .bg-light,
@@ -258,26 +253,6 @@ img {
   display: block;
   margin-top: 0.3rem;
   color: #888;
-}
-
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
-.form select,
-.form textarea {
-  display: block;
-  width: 100%;
-  padding: 0.4rem;
-  font-size: 1.2rem;
-}
-
-input[type='email'],
-input[type='password'],
-input{
-  border: none;
-  border-bottom: 2px solid #E9C363 !important;
-  width: 80%;
 }
 
 h3{
@@ -520,10 +495,6 @@ background-size: cover;
 
 /* Mobile Styles */
 @media (max-width: 700px) {
-  .container {
-    margin-top: 4.6rem;
-  }
-
   .hide-sm {
     display: none;
   }
@@ -611,10 +582,7 @@ background-size: cover;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-  font-family: 'Josefin Sans', sans-serif;
-  
-}
+
 
 .logo{
   display: block;
@@ -696,13 +664,31 @@ body{
 }
 
 .tribal{
-  background: url('./dash.jpg') !important;
+  /* background: url('./dash.jpg') !important; */
+  background: #58b4ae;
   height: 100vh;
   width: 100vw;
   margin: auto;
-  margin-top: 4em;
   padding: 0 !important;
   top: 0;
+}
+
+.dashboard {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dash-text{
+  /* margin: 0 10% 0 10%; */
+  color: #ffe277;
+  font-size: 1.5em;
+  text-align: center; ;
+}
+.dash-text-div{
+  width: 50%;
 }
 .signup{
   font-family: 'Josefin Sans', sans-serif !important;
@@ -714,7 +700,7 @@ body{
 }
 
 .login{
-  font-family: 'Josefin Sans', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   background-color: inherit;
   border-color: #E9C363;
   border: 2px solid;
@@ -767,9 +753,6 @@ button{
     width: 100%;
     background: inherit;
   }
-  .tribal{
-    margin-top: 6em;
-  }
   .large{
     margin: 10%;
     margin-top: 4em;
@@ -785,11 +768,7 @@ button{
   }
 }
 
-.dash-text{
-  margin: 0 10% 0 10%;
-  font-size: 1.5em;
-  text-align: center !important;
-}
+
 
 .quiz{
   margin: 80px;
@@ -805,4 +784,65 @@ button{
 .img-logo{
   width: 16em;
   height: auto;
+}
+
+
+/* LOGIN FORM STYLES */
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+
+.loginSection{
+  background: #364f6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+.loginForm{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginForm input{
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.loginForm input:focus{
+  background: rgba(0,0,0,0.15);
+}
+.loginText{
+  font-size: 58px;
+  margin: 15px;
+  color: #fc5185;
+}
+.login-form-group{
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 60vh; */
+  background: #3fc1c9;
+  border-radius: 15px;
+  color: #f5f5f5;
+}
+.login-form-group a{
+  color: #fc5185;
+}
+.loginSubmit:hover{
+  cursor: pointer;
+  background: rgba(0,0,0,0.35);
+  transition: 0.2s;
+}
+
+@media (max-width: 728px){
+  
+  .login-form-group{
+    width: 90%;
+  }
 }

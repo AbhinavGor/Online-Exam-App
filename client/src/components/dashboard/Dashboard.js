@@ -10,11 +10,13 @@ const Dashboard = ({
   }, []);
 
   return (
-    
-      <section className='tribal'>
-      <p className="lead">
-        <i className="fas fa-user" /> Welcome {user && user.name}
-      </p>
+
+    <section className='tribal'>
+      <div className="dashboard">
+        <h1 className="lead">
+          <i className="fas fa-user" /> Welcome {user && user.name}
+        </h1>
+        {/* <div className='img-align'><img className  = 'img-logo' src={require('../dashboard/TH.jpg')} alt="logo" /></div>
       <p className='dash-text'>
       <div className='img-align'><img className  = 'img-logo' src={require('./TH.JPG')} /></div>
           Online Treasure quest<br /> 
@@ -33,20 +35,44 @@ const Dashboard = ({
           The second stage tests your coding skills.<br />
           It is hackerank competition. Solve all the questions as soon as you can. The one who completes the game first becomes the winner.<br />
           WELCOME!<br /><br />
-      </p>
-      </section>
+      </p> */}
+        <div className="dash-text-div">
+          <p className="dash-text">
+            The games consists of two stages. <br />
+            The first stage tests your IQ.<br />
+            Solve 10 clues and puzzles that come your way, answer
+            of each clue leads you to the next. Participants above a certain score will be allowed into the next stage.<br /><br />
+          </p>
+        </div>
+
+        <button className="dash-quiz">
+          Round 1
+        </button>
+
+        <div className="dash-text">
+          <p className="dash-text">
+            
+          </p>
+        </div>
+          <button className="dash-logout">
+            Logout
+          </button>
+
+
+        </div>
+    </section>
   );
 };
 
 Dashboard.propTypes = {
-  auth: PropTypes.object.isRequired
+        auth: PropTypes.object.isRequired
 };
 
 const mapStateToProps = (state) => ({
-  auth: state.auth,
+        auth: state.auth,
   profile: state.profile
 });
 
-export default connect(mapStateToProps, {  })(
+export default connect(mapStateToProps, {})(
   Dashboard
 );
