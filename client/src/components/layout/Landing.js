@@ -10,13 +10,14 @@ const Landing = ({ isAuthenticated }) => {
 
   return (
     <section className='landing'>
+      
       <div className='transparent'>
         <h1 className='logo'>Bored again with lockdown 3.0?</h1>
-        <h1 className='logo'>IEEE SSIT - VIT brings you -</h1>
+        
+        <h1 className='logo'><strong>IEEE SSIT - VIT</strong> brings to you </h1>
         
       </div>
       <div className='landing-main'>
-        <h4 class='logo'>IEEE SSIT - VIT</h4>
         <div className='lead leadp'>
           Online quiz
         </div>
