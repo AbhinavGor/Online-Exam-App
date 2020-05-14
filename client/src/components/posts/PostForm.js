@@ -26,7 +26,8 @@ const PostForm = ({ addPost }) => {
 
   return (
     <Fragment>
-    <div className='post-form post' id='form'>
+    <div className='post-form' id='form'>
+    <h1 className='large text-primary quiz-head'><i className='far fa-question-circle'></i> Quiz</h1>
       <form
         className='form my-1 form-group'
         onSubmit={e => {
@@ -39,8 +40,9 @@ const PostForm = ({ addPost }) => {
         <div className='bg-primary p'>
           <h3>Question 1</h3>
         </div><br />
-          <h4>1 + 3 = ??</h4>
+          <h4 className='question'>1 + 3 = ??</h4>
         <div id='3'><input
+        className='answer'
           type='text'
           name='text2'
           cols='30'
@@ -53,8 +55,9 @@ const PostForm = ({ addPost }) => {
         <div className='bg-primary p'>
           <h3>Question 2</h3>
         </div><br />
-        <h4>Delhi is the capital city of _________.</h4>
+        <h4 className='question'>Delhi is the capital city of _________.</h4>
         <div id='india'><input
+        className='answer'
           type='text'
           name='text2'
           cols='30'
@@ -65,8 +68,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 3</h3>
         </div><br />
-        <h4>Waht is the speeling of speling?</h4>
+        <h4 className='question'>Waht is the speeling of speling?</h4>
         <div id='spelling'><input
+        className='answer'
           type='text'
           name='text2'
           cols='30'
@@ -77,8 +81,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 4</h3>
         </div><br />
-        <h4>Is StarTrek better than StarWars?</h4>
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <div id='No'><input
+        className='answer'
           type='text'
           name='text2'
           cols='30'
@@ -90,7 +95,9 @@ const PostForm = ({ addPost }) => {
           <h3>Question 5</h3>
           </div>
         <br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
           name='text2'
           cols='30'
           rows='2'
@@ -100,7 +107,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 6</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
           type='text'
           name='text2'
           cols='30'
@@ -111,7 +120,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 7</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -122,7 +133,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 8</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -133,7 +146,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 9</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -144,7 +159,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 10</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -155,7 +172,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 11</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -166,7 +185,10 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 12</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -177,7 +199,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 13</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -188,7 +212,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 14</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
@@ -199,7 +225,9 @@ const PostForm = ({ addPost }) => {
           <div className='bg-primary p'>
           <h3>Question 15</h3>
         </div><br />
+        <h4 className='question'>Is StarTrek better than StarWars?</h4>
         <input
+        className='answer'
         type='text'
           name='text2'
           cols='30'
