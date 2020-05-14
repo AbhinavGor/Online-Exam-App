@@ -27,10 +27,7 @@ const Landing = ({ isAuthenticated }) => {
         </div>
         
       </div>
-    <div class="footer">
-        {/* <h1>&copy;<a href = 'https://abhinavgor.netlify.app/'>Abhinav Gorantla</a> 2020.</h1> */}
-        <h1>&copy;IEEE SSIT - VIT 2020.</h1>
-    </div>
+  
     </section>
   );
 };

@@ -32,10 +32,11 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   }
 
   return (
-    <Fragment>
-      <h1 className='large text-primary'>Sign Up</h1>
-      <form className='form' onSubmit={e => onSubmit(e)}>
-        <div className='form-group'>
+    <fragment>
+    <section className="loginSection">
+      <div className="login-form-group">
+      <h1 className='loginText'>Sign Up</h1>
+      <form className='loginForm' onSubmit={e => onSubmit(e)}>
           <input
             type='text'
             placeholder='Name'
@@ -43,8 +44,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={name}
             onChange={e => onChange(e)}
           />
-        </div>
-        <div className='form-group'>
           <input
             type='email'
             placeholder='Email Address'
@@ -52,8 +51,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={email}
             onChange={e => onChange(e)}
           />
-        </div>
-        <div className='form-group'>
           <input
             type='password'
             placeholder='Password'
@@ -61,8 +58,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={password}
             onChange={e => onChange(e)}
           />
-        </div>
-        <div className='form-group'>
           <input
             type='password'
             placeholder='Confirm Password'
@@ -70,13 +65,14 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value={password2}
             onChange={e => onChange(e)}
           />
-        </div>
-        <input type='submit' className='btn btn-primary' value='Register' />
+        <input type='submit' className='loginSubmit' value='Register' />
       </form>
       <p className='my-1 auth'>
         Already have an account? <Link to='/login'>Sign In</Link>
       </p>
-    </Fragment>
+      </div>
+    </section>
+    </fragment>
   );
 };
 
