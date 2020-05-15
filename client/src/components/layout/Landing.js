@@ -3,10 +3,13 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-const Landing = ({ isAuthenticated }) => {
-  if (isAuthenticated) {
-    return <Redirect to='/dashboard' />;
-  }
+// const Landing = ({ isAuthenticated }) => {
+//   if (isAuthenticated) {
+//     return <Redirect to='/dashboard' />;
+//   }
+
+const Landing = ({  }) => {
+  
 
   return (
         <div>
@@ -16,12 +19,12 @@ const Landing = ({ isAuthenticated }) => {
                       <h1>IEEE SSIT - VIT</h1>
                       <div className="dash-text-div">
                         <p className="dash-text">
-                          Register or Login to get started. <br />
+                          Register to get started. <br />
                         </p>
                       </div>
                     </div>
                     <div class = "cta">
-                        <Link to='/quiz'><button className = "cta-select loginSubmit">Quiz</button></Link>
+                        <Link to='/register'><button className = "cta-select loginSubmit">Register</button></Link>
                     </div>
                 </div>
                 <div class="cover">

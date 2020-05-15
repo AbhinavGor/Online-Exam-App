@@ -44,7 +44,7 @@ export const register = ({ name, email, password }) => async (dispatch) => {
       type: REGISTER_SUCCESS,
       payload: res.data
     });
-    dispatch(loadUser());
+    dispatch(setAlert('Registration successful.', 'success'));//Change setAlert to loadUser() on final deploy.
   } catch (err) {
     const errors = err.response.data.errors;
 
