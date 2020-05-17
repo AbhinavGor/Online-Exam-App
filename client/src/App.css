@@ -18,10 +18,11 @@ body {
   font-family: 'Poppins', sans-serif;
   /* font-size: 1rem; */
   /* line-height: 1.6; */
+  overflow-x: hidden;
   background-color: #fff;
   color: #333;
   /* background-color: black; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 a {
@@ -277,7 +278,7 @@ img {
   width: 60vw;
 }
 .form .form-group {
-  overflow: hidden;
+  
   margin:  0;
 }
 
@@ -502,7 +503,7 @@ h3{
 }
 
 .post-form{
-  overflow: hidden;
+  
 }
 
 .quiz-head{
@@ -544,6 +545,14 @@ h3{
 @media (max-width: 700px) {
   .hide-sm {
     display: none;
+  }
+
+  .loginSection{
+    height: 120vh !important;
+  }
+
+  .loginSection{
+    margin-top: -16.2% !important;
   }
 
   .transparent{
@@ -913,7 +922,8 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 93.7vh;
+  height: 100vh;
+  margin-top: -3.2%;
   font-family: 'Poppins', sans-serif;
 }
 .loginForm{
@@ -1056,8 +1066,7 @@ nav {
 
 #root{
   padding-top: 60px;
-  height: 100%;
-  overflow: hidden !important;
+  height: 100vh;
   background-image: linear-gradient(to right,  rgba(0, 121, 145, 0.52), rgba(120, 255, 214, 0.72));
 }
 .presentation{
@@ -1232,6 +1241,10 @@ nav {
 
   .ssit{
     width: 30%;
+  }
+
+  .loginSection{
+    margin-top: -6.2%;
   }
   .dash-text-div{
     margin-left: 20%;
