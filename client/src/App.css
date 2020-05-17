@@ -333,7 +333,6 @@ h3{
   width: 100vw;
   top: 0;
   height: 12%;
-  background-image: linear-gradient(to right,  rgba(0, 121, 145, 0.26), rgba(120, 255, 214, 0.36));
 }
 
 .navbar ul {
@@ -1211,7 +1210,7 @@ nav {
 }
 
 .navbar{
-  background-image: linear-gradient(to right,  rgba(0, 121, 145, 0.26), rgba(120, 255, 214, 0.36));
+  /* background-image: linear-gradient(to right,  rgba(0, 121, 145, 0.26), rgba(120, 255, 214, 0.36)); */
 }
 
 .transparent img{
