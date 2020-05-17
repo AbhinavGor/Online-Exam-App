@@ -38,11 +38,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   return (
     <nav className='navbar'>
-      <h1>
+      
         <Link to='/'>
-          <i className='fas fa-code' /> IEEE SSIT
+          <img className = 'ssit' src = {require('./logo.png')} />
         </Link>
-      </h1>
+      
       {!loading && (
         <Fragment>{isAuthenticated ? guestLinks : guestLinks}</Fragment>//Change the first guest links to authLinks in final deploy
       )}

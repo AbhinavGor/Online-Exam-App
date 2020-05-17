@@ -16,7 +16,7 @@ const Landing = ({  }) => {
             <section class = "presentation">
                 <div class = "introduction">
                     <div class = "intro-text">
-                      <h1>IEEE SSIT - VIT</h1>
+                      <h1>IEEE SSIT</h1>
                       <div className="dash-text-div">
                         <p className="dash-text">
                           Register to get started. <br />

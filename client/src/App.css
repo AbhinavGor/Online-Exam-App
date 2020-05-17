@@ -21,13 +21,16 @@ body {
   background-color: #fff;
   color: #333;
   /* background-color: black; */
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 a {
   text-decoration: none;
 }
 
+.ssit{
+  width: 10%;
+}
 ul {
   list-style: none;
 }
@@ -329,11 +332,13 @@ h3{
   z-index: 100;
   width: 100vw;
   top: 0;
+  height: 12%;
   background-image: linear-gradient(to right,  rgba(0, 121, 145, 0.26), rgba(120, 255, 214, 0.36));
 }
 
 .navbar ul {
   display: flex;
+  flex-direction: row;
 }
 
 
@@ -561,7 +566,6 @@ h3{
 
   /* Navbar */
   .navbar {
-    display: block;
     text-align: center;
   }
 
@@ -572,6 +576,13 @@ h3{
 
   .navbar h1 {
     margin-bottom: 1rem;
+  }
+
+  .navbar a img{
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    margin-left: -180px;
   }
 
   .navbar .welcome {
@@ -749,7 +760,8 @@ button:hover{
 .dash-text{
   color: var(--dark-color);
   font-size: 1.5em;
-  text-align: left; ;
+  text-align: left;
+  padding: 0 0 20px 0;
 }
 .dash-text-1{
   color: var(--dark-color);
@@ -987,7 +999,7 @@ button:hover{
 
 .loginSubmit{
   width: 100%;
-  padding: 16px 32px;
+  padding: 10px 32px;
 }
 .loginSubmit:hover{
   cursor: pointer;
@@ -1052,21 +1064,23 @@ nav {
 .presentation{
   padding: 0;
   margin: 0;
-    display: flex;
-    width: 90%;
-    margin: auto;
-    min-height: 93.7vh;
-    align-items: center;
-    overflow-y: hidden !important;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 93.7vh;
+  align-items: center;
+  overflow-y: hidden !important;
 }
 
 .introduction{
-    flex: 1;
+  flex: 2;
     width: 50%;
 }
 .intro-text h1{
     font-size: 40px;
     font-weight: 500px;
+    margin-top: -40px;
+    padding: 0px 0 20px 0;
     background: linear-gradient(to right, #494964, #6f6f89);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1155,9 +1169,18 @@ nav {
     display: flex;
     flex-direction: column !important;
   }
+  .introduction{
+    flex: none;
+    padding: 0;
+  }
   .cover img {
-    width: 400px;
+    width: 200px;
     height: auto !important;
+    margin-top: 10% !important;
+  }
+
+  .cover{
+    text-align: center;
   }
   .lead{
     font-size: 1.8em !important;
@@ -1202,6 +1225,15 @@ nav {
 }
 
 @media(max-width: 1000px){
+
+  .presentation{
+    min-height: 92.5vh;
+    align-content: space-around;
+  }
+
+  .ssit{
+    width: 30%;
+  }
   .dash-text-div{
     margin-left: 20%;
   }
