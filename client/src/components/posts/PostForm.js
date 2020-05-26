@@ -28,6 +28,7 @@ const PostForm = ({ addPost }) => {
     <Fragment>
     <div className='post-form' id='form'>
     <h1 className='large text-primary quiz-head'><i className='far fa-question-circle'></i> Quiz</h1>
+    <h2>All answers should be in uppercase letters.</h2>
       <form
         className='form my-1 form-group'
         onSubmit={e => {
