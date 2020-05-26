@@ -79,7 +79,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
       <h1 className='x-large text-primary'>
         <i className='fas fa-exclamation-triangle' /> Registrations closed
       </h1>
-      <p className='large'>Sorry, we have clode the registrations and the event has started.</p>
+      <p className='large'>Sorry, we have closed the registrations and the event has started.</p>
     </Fragment>
   );
 };
