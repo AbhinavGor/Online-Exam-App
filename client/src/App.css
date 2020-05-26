@@ -51,15 +51,14 @@ img {
 /* Text Styles*/
 .x-large {
   font-size: 4rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-left: 1em;
 }
 
 .large {
+  margin-left: 1em;
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  margin-top: 2em;
 }
 
 .lead {
@@ -1069,6 +1068,9 @@ nav {
 	justify-content: flex-end;
 }
 
+h2{
+  margin-left: 10%;
+}
 #root{
   padding-top: 60px;
   height: 100%;
