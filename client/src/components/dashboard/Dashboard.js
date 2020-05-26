@@ -22,7 +22,7 @@ const Dashboard = ({
                         <p className="dash-text">
                           The games consists of two stages. <br />
                           The first stage tests your aptitude.<br />
-                          Solve 15  puzzles that come your way. <br />Participants above a certain score will be allowed into the next stage.<br /><br />
+                          Solve 15  puzzles that come your way. <br />Participants <strong>above</strong> a certain score will be allowed into the next stage.<br /><br />
                         </p>
                       </div>
                       <div className="dash-text-div">
@@ -30,7 +30,9 @@ const Dashboard = ({
                         The second stage tests your coding skills.<br />
                         It is hackerank competition.<br /> Solve all the questions as soon as you can. <br />
                         The participant with the highest score wins.<br />
-                        </p>
+                        </p><br /><br />
+                        <h1>Coding Round is tommorow at 8:00AM to 11:59 PM.</h1>
+                        <h2>Check this page later for details.</h2>
                       </div>
                     </div>
                     <div class = "cta">

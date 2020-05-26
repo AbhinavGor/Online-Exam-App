@@ -16,7 +16,7 @@ const Landing = ({ isAuthenticated }) => {
                       <h1>IEEE SSIT</h1>
                       <div className="dash-text-div">
                         <p className="dash-text">
-                          Register to get started. <br />
+                          Login to get started. <br />
                         </p>
                       </div>
                     </div>

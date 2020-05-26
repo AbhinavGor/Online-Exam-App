@@ -13,9 +13,9 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     password2: ''
   });
 
-  if (isAuthenticated) {
-    return <Redirect to='/login' />;
-  }
+  // if (isAuthenticated) {
+  //   return <Redirect to='/login' />;
+  // }
 
   const { name, email, password, password2 } = formData;
 
@@ -33,47 +33,54 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
 
   return (
-    <fragment>
-    <section className="loginSection">
-      <div className="login-form-group">
-      <h1 className='loginText'>Sign Up</h1>
-      <form className='loginForm' onSubmit={e => onSubmit(e)}>
-          <input
-            type='text'
-            placeholder='Name'
-            name='name'
-            value={name}
-            onChange={e => onChange(e)}
-          />
-          <input
-            type='email'
-            placeholder='Email Address'
-            name='email'
-            value={email}
-            onChange={e => onChange(e)}
-          />
-          <input
-            type='password'
-            placeholder='Password'
-            name='password'
-            value={password}
-            onChange={e => onChange(e)}
-          />
-          <input
-            type='password'
-            placeholder='Confirm Password'
-            name='password2'
-            value={password2}
-            onChange={e => onChange(e)}
-          />
-        <input type='submit' className='loginSubmit' value='Register' />
-      </form>
-      <p className='my-1 auth'>
-        Already have an account? <Link to='/login'>Sign In</Link>
-      </p>
-      </div>
-    </section>
-    </fragment>
+    // <fragment>
+    // <section className="loginSection">
+    //   <div className="login-form-group">
+    //   <h1 className='loginText'>Sign Up</h1>
+    //   <form className='loginForm' onSubmit={e => onSubmit(e)}>
+    //       <input
+    //         type='text'
+    //         placeholder='Name'
+    //         name='name'
+    //         value={name}
+    //         onChange={e => onChange(e)}
+    //       />
+    //       <input
+    //         type='email'
+    //         placeholder='Email Address'
+    //         name='email'
+    //         value={email}
+    //         onChange={e => onChange(e)}
+    //       />
+    //       <input
+    //         type='password'
+    //         placeholder='Password'
+    //         name='password'
+    //         value={password}
+    //         onChange={e => onChange(e)}
+    //       />
+    //       <input
+    //         type='password'
+    //         placeholder='Confirm Password'
+    //         name='password2'
+    //         value={password2}
+    //         onChange={e => onChange(e)}
+    //       />
+    //     <input type='submit' className='loginSubmit' value='Register' />
+    //   </form>
+    //   <p className='my-1 auth'>
+    //     Already have an account? <Link to='/login'>Sign In</Link>
+    //   </p>
+    //   </div>
+    // </section>
+    // </fragment>
+    <Fragment>
+      <br /><br /><br /><br />
+      <h1 className='x-large text-primary'>
+        <i className='fas fa-exclamation-triangle' /> Registrations closed
+      </h1>
+      <p className='large'>Sorry, we have clode the registrations and the event has started.</p>
+    </Fragment>
   );
 };
 
