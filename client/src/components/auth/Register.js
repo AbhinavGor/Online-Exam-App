@@ -13,6 +13,10 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     password2: ''
   });
 
+  if (isAuthenticated) {
+    return <Redirect to='/login' />;
+  }
+
   const { name, email, password, password2 } = formData;
 
   const onChange = e =>
@@ -65,7 +69,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
         <input type='submit' className='loginSubmit' value='Register' />
       </form>
       <p className='my-1 auth'>
-        {/* Already have an account? <Link to='/login'>Sign In</Link> */}
+        Already have an account? <Link to='/login'>Sign In</Link>
       </p>
       </div>
     </section>

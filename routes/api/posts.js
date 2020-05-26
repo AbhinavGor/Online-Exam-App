@@ -23,49 +23,49 @@ router.post(
     try {
       const user = await User.findById(req.user.id).select('-password');
 
-      if(req.body.text == '3'){
+      if(req.body.text == 'BLOCKCHAIN'){
         fscore += 1;
       }
-      if(req.body.text2 == 'india'){
+      if(req.body.text2 == 'HACKER'){
         fscore += 1;
       }
-      if(req.body.text3 == 'spelling'){
+      if(req.body.text3 == 'FIBONACCI'){
         fscore += 1;
       }
-      if(req.body.text4 == 'No'){
+      if(req.body.text4 == 'TURING'){
         fscore += 1;
       }
-      if(req.body.text5 == 'india'){
+      if(req.body.text5 == 'bandramumbai'){
         fscore += 1;
       }
-      if(req.body.text6 == 'india'){
+      if(req.body.text6 == 'IEEE'){
         fscore += 1;
       }
-      if(req.body.text7 == 'india'){
+      if(req.body.text7 == 'EOJDJEFM'){
         fscore += 1;
       }
-      if(req.body.text8 == 'india'){
+      if(req.body.text8 == 125){
         fscore += 1;
       }
-      if(req.body.text9 == 'india'){
+      if(req.body.text9 == '&N4'){
         fscore += 1;
       }
-      if(req.body.text10 == 'india'){
+      if(req.body.text10 == 16.01){
         fscore += 1;
       }
-      if(req.body.text11 == 'india'){
+      if(req.body.text11 == 98){
         fscore += 1;
       }
-      if(req.body.text12 == 'india'){
+      if(req.body.text12 == 5){
         fscore += 1;
       }
-      if(req.body.text13 == 'india'){
+      if(req.body.text13 == 182){
         fscore += 1;
       }
-      if(req.body.text14 == 'india'){
+      if(req.body.text14 == 343){
         fscore += 1;
       }
-      if(req.body.text15 == 'india'){
+      if(req.body.text15 == 32){
         fscore += 1;
       }
 

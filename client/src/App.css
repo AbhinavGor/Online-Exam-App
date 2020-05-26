@@ -176,7 +176,7 @@ img {
 }
 
  .question{
-   width: 80%;
+   width: 60%;
    overflow: hidden;
   margin-left: 5% !important; 
   font-size: 1.3em;
@@ -326,7 +326,6 @@ h3{
 .navbar {
   color: var(--dark-color) !important;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
   position: fixed;
@@ -337,6 +336,7 @@ h3{
 }
 
 .navbar ul {
+  flex: auto;
   display: flex;
   flex-direction: row;
 }
@@ -499,11 +499,12 @@ h3{
 /* Posts Page */
 .post-form .post-form-header {
   background: var(--primary-color);
-  padding: 0.5rem;
+  padding: 0rem;
 }
 
 .post-form{
-  
+    margin: 0;
+    padding: 0; 
 }
 
 .quiz-head{
@@ -852,6 +853,9 @@ button{
 }
 
 @media (max-width: 900px){
+  .question{
+    font-size: 14px;
+  }
   .landing{
     display: grid;
     grid-template: 1fr / 1fr;
@@ -1066,7 +1070,8 @@ nav {
 
 #root{
   padding-top: 60px;
-  height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
   background-image: linear-gradient(to right,  rgba(0, 121, 145, 0.52), rgba(120, 255, 214, 0.72));
 }
 .presentation{
