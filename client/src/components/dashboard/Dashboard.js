@@ -31,8 +31,8 @@ const Dashboard = ({
                         It is hackerank competition.<br /> Solve all the questions as soon as you can. <br />
                         The participant with the highest score wins.<br />
                         </p><br /><br />
-                        <h1>Coding Round is tommorow at 8:00AM to 11:59 PM.</h1>
-                        <h2>Check this page later for details.</h2>
+                        <h1>Coding Round is on 27th May 2020 at 8:00AM to 11:59 PM.</h1>
+                        <h2>Click <a href = 'https://www.hackerrank.com/contests/iqode2020/'>here</a> to join the final round.</h2>
                       </div>
                     </div>
                     <div class = "cta">
